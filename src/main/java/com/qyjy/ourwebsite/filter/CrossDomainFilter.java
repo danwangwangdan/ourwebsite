@@ -11,11 +11,13 @@ public class CrossDomainFilter implements Filter {
 
     private final Logger log = LoggerFactory.getLogger(getClass());
 
+    @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
 
     }
 
+    @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
 
 

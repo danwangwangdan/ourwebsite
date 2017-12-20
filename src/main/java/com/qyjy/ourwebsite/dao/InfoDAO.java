@@ -6,5 +6,8 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface InfoDAO extends JpaRepository<Info, Long> {
+public interface InfoDAO extends JpaRepository<Info, Integer> {
+
+    Info findByTitle(String title);
+
 }
